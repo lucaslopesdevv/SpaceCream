@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 65.2%;
+}
+
+body {
+  font-family: "Staatliches", sans-serif;
+  background: #eff1ff;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #8e9aaf;
+  height: 279px;
+
+  margin-bottom: 14px;
+}
+
+header h1 {
+  color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 2px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 49px;
+
+  background: #cbc0d3;
+}
+
+main {
+  width: 320px;
+  margin: 0 auto;
+}
+
+main p {
+  font-family: "Palanquin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: #23053a;
+
+  margin-bottom: 63px;
+}
+
+main .iceCreamBox {
+  position: relative;
+  display: inline-block;
+}
+
+.iceCreamBox {
+  display: block;
+  max-width: 100%;
+
+  margin-bottom: 36px;
+}
+
+.iceCreamBox:last-child {
+  margin-bottom: 60px;
+}
+
+.iceCreamBox img {
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+
+.iceCreamBox h2 {
+  opacity: 0;
+
+  position: absolute;
+  top: 9%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #4a4e69;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+
+  animation: fadeIn 1s 1s forwards;
+
+  background-color: #feeafa;
+
+  border-radius: 2rem;
+  width: 112px;
+
+  z-index: 1;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 9%;
+  }
+}
